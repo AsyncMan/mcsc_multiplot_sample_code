@@ -10,11 +10,15 @@ x = np.linspace(start=-2 * np.pi, stop=2 * np.pi, num=50)
 # NOTE: plot([x], [y], fmt, data=None, **kwargs)
 # fmt:  [color][line][marker] in any order
 
-plt.plot(x, np.sin(x), '.-r')
+# plt.plot(x, np.sin(x), '.-r')
 plt.plot(x, np.cos(x), '.--b')
 
-# plt.xlabel("x", loc="center")
-# plt.ylabel('y', loc="center")
+plt.title("plt.plot(x, np.cos(x), '.--b')")
+
+plt.xlabel("x", loc="center")
+plt.ylabel('y', loc="center")
+
+plt.show()
 
 # plt.minorticks_on()
 # plt.grid(visible=True, which='major', axis='both')
